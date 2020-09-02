@@ -4,13 +4,13 @@ import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
-import com.example.twitchmvvmapp.data.models.Game
 import com.example.twitchmvvmapp.data.models.Top
+
 @Dao
-interface GameDao {
+interface TopDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insetOrUpdate(game: Game):Int
+    suspend fun insetOrUpdate(top: Top):Int
 
     @Delete
-    suspend fun deleteGame(game:Game)
+    suspend fun deleteTop(top:Top)
 }

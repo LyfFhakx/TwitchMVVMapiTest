@@ -5,6 +5,8 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
+import com.example.twitchmvvmapp.data.dao.GameDao
+import com.example.twitchmvvmapp.data.dao.TopDao
 import com.example.twitchmvvmapp.domain.Converters.BoxConverter
 import com.example.twitchmvvmapp.domain.Converters.LogoConverter
 import com.example.twitchmvvmapp.data.dao.TopGamesDao
@@ -18,7 +20,9 @@ import com.example.twitchmvvmapp.data.models.Top
 )
 @TypeConverters(BoxConverter::class, LogoConverter::class)
 abstract class AppDatabase : RoomDatabase() {
-    abstract fun getTopDao(): TopGamesDao
+    abstract fun getTopDao(): TopDao
+    abstract fun getGameDao():GameDao
+    abstract fun getTopGamesDao():TopGamesDao
 
     companion object {
         @Volatile

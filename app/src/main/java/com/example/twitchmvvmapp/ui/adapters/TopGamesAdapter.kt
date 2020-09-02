@@ -6,7 +6,6 @@ import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.twitchmvvmapp.R
-import com.example.twitchmvvmapp.data.models.Top
 import com.example.twitchmvvmapp.data.models.TopGames
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.item_top_preview.view.*
