@@ -46,9 +46,9 @@ class TopGamesAdapter : RecyclerView.Adapter<TopGamesViewHolder>() {
 
     val differ = AsyncListDiffer(this, differCallback)
 
-    private var onItemClickListener: ((Top) -> Unit)? = null
+    private var onItemClickListener: ((TopGames) -> Unit)? = null
 
-    fun setOnCLickListener(listener: (Top) -> Unit) {
+    fun setOnCLickListener(listener: (TopGames) -> Unit) {
         onItemClickListener = listener
     }
 }
