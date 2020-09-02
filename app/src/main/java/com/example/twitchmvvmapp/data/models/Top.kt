@@ -8,6 +8,6 @@ data class Top(
     @PrimaryKey(autoGenerate = true)
     var id: Int? = null,
     val channels: Int,
-    val game: Game,
+    val gameId: Int,
     val viewers: Int
 )

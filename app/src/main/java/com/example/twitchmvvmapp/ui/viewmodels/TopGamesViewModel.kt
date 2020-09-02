@@ -16,5 +16,5 @@ class TopGamesViewModel(
     val topGames: MutableLiveData<Resource<TopGameResponse>> = MutableLiveData()
     var topGamesPage = 1
     var topGamesResponse: TopGameResponse? = null
-    
+
 }
